@@ -9,7 +9,6 @@ git clone https://github.com/hasnainali659/Assessment_SSD.git
 3. Build the docker image using command.
 ```
 docker build -t assessment:1.0 .
-
 ```
 4. Run ```xhost + ``` command on terminal.
 5. Run docker image.
