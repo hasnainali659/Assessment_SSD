@@ -13,7 +13,7 @@ docker build -t assessment:1.0 .
 4. Run ```xhost + ``` command on terminal.
 5. Run docker image.
 ```
-docker run -it -v $PWD:/app/ --device=/dev/video0:/dev/video0 -v /tmp/ .X11-unix -e DISPLAY=$DISPLAY assessment:1.0 bash
+docker run -it -v $PWD:/app/ --device=/dev/video0:/dev/video0 -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY assessment:1.0 bash
 ```
 6. Finally, run the python detection_SSD script to observe object detection using MobileSSD in real-time.
 ```
